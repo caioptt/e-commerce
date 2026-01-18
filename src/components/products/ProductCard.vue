@@ -7,22 +7,21 @@
         width="100%"
       ></v-img>
       <v-card-title>{{ product.name }}</v-card-title>
-      <v-card-subtitle>{{ product.price }}</v-card-subtitle>
+
       <v-card-text> </v-card-text>
       <v-card-actions>
         <v-row>
-          <v-col class="" cols="8"
-            ><v-btn color="info" size="large" variant="flat"
-              >Ver detalhes</v-btn
+          <v-col class="" cols="8">
+            <v-card-subtitle class="price"
+              >R$ {{ product.price }}</v-card-subtitle
             ></v-col
           >
           <v-col class="pl-0" cols="4"
             ><v-btn
               color="black"
-              size="large"
-              variant="flat"
-              prepend-icon="mdi-cart"
-              append-icon="mdi-plus"
+              variant="outlined"
+              icon="mdi-shopping-outline"
+              class="square-btn"
             ></v-btn
           ></v-col>
         </v-row>
@@ -42,3 +41,13 @@ defineProps<{
   product: Product;
 }>();
 </script>
+
+<style scoped>
+.square-btn {
+  border-radius: 4px;
+}
+
+.price {
+  font-size: large;
+}
+</style>
