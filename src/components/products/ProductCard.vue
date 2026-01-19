@@ -7,17 +7,14 @@
         width="100%"
       ></v-img>
       <v-card-title>{{ product.name }}</v-card-title>
-
-      <v-card-text> </v-card-text>
       <v-card-actions>
         <v-row>
           <v-col class="" cols="8">
-            <v-card-subtitle class="price"
-              >R$ {{ product.price }}</v-card-subtitle
-            ></v-col
+            <v-card-subtitle>R$ {{ product.price }}</v-card-subtitle></v-col
           >
           <v-col class="pl-0" cols="4"
             ><v-btn
+              size="small"
               color="black"
               variant="outlined"
               icon="mdi-shopping-outline"
@@ -45,9 +42,5 @@ defineProps<{
 <style scoped>
 .square-btn {
   border-radius: 4px;
-}
-
-.price {
-  font-size: large;
 }
 </style>
