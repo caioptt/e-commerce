@@ -1,26 +1,23 @@
 <template>
-  <v-container class="pt-0">
-    <v-carousel
-      height="1000"
-      cycle
-      show-arrows="hover"
-      hide-delimiter-background
-    >
-      <v-carousel-item
-        v-for="(src, i) in items"
-        :key="i"
-        :src="src"
-        cover
-      ></v-carousel-item>
-    </v-carousel>
-  </v-container>
+  <v-carousel
+    :show-arrows="false"
+    height="1000"
+    cycle
+    hide-delimiter-background
+  >
+    <v-carousel-item
+      v-for="(item, i) in items"
+      :key="i"
+      :src="item.src"
+      cover
+    />
+  </v-carousel>
 </template>
 
 <script setup>
 const items = [
-  "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
-  "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
-  "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
-  "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
+  { src: new URL("@/assets/carousel/1.png", import.meta.url).href },
+  { src: new URL("@/assets/carousel/2.png", import.meta.url).href },
+  { src: new URL("@/assets/carousel/3.png", import.meta.url).href },
 ];
 </script>

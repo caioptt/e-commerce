@@ -25,12 +25,12 @@
 </template>
 
 <script setup lang="ts">
-import tenis1 from "@/assets/air force.png";
-import tenis2 from "@/assets/dunk low.png";
-import tenis3 from "@/assets/air max 95.png";
-import tenis4 from "@/assets/superstar.png";
-import tenis5 from "@/assets/puma rs-x.png";
-import tenis6 from "@/assets/new balance.png";
+import tenis1 from "@/assets/products/air force.png";
+import tenis2 from "@/assets/products/dunk low.png";
+import tenis3 from "@/assets/products/air max 95.png";
+import tenis4 from "@/assets/products/superstar.png";
+import tenis5 from "@/assets/products/puma rs-x.png";
+import tenis6 from "@/assets/products/new balance.png";
 
 const products = [
   {
