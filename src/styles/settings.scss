@@ -1,3 +1,5 @@
-.v-application {
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
+@use 'sass:string';
+@use 'vuetify/settings' with (
+  $body-font-family: string.unquote('"Plus Jakarta Sans", sans-serif'),
+  $heading-font-family: string.unquote('"Plus Jakarta Sans", sans-serif')
+);
