@@ -1,10 +1,8 @@
 <template>
   <v-container>
     <v-row>
-      <!-- SKELETON -->
       <ProductSkeleton v-if="loading" />
 
-      <!-- PRODUTOS -->
       <v-col
         v-else
         v-for="(product, index) in products"
@@ -87,7 +85,6 @@ const products = [
 ];
 
 onMounted(() => {
-  // Simula chamada API
   setTimeout(() => {
     loading.value = false;
   }, 700);
