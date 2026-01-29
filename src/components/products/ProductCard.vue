@@ -1,7 +1,14 @@
 <template>
   <v-container>
     <v-row>
-      <v-col v-for="(product, index) in products" :key="index" cols="2">
+      <v-col
+        v-for="(product, index) in products"
+        :key="index"
+        cols="12"
+        sm="6"
+        md="4"
+        lg="3"
+      >
         <v-card class="pa-3" elevation="0">
           <v-img :src="product.image" height="250" width="100%" cover />
 
