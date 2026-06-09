@@ -13,10 +13,15 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppBar: typeof import('./components/layout/appBar.vue')['default']
     Carousel: typeof import('./components/layout/carousel.vue')['default']
+    Cart: typeof import('./components/menus/cart.vue')['default']
+    Favorite: typeof import('./components/menus/favorite.vue')['default']
     Footer: typeof import('./components/layout/footer.vue')['default']
+    Login: typeof import('./components/menus/login.vue')['default']
     ProductCard: typeof import('./components/products/ProductCard.vue')['default']
     ProductFilter: typeof import('./components/products/ProductFilter.vue')['default']
+    ProductPage: typeof import('./components/products/productPage.vue')['default']
     ProductSkeleton: typeof import('./components/products/ProductSkeleton.vue')['default']
+    Register: typeof import('./components/menus/register.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
