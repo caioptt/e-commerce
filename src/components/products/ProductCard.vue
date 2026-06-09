@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row >
       <ProductSkeleton v-if="loading" />
 
       <v-col
@@ -12,7 +12,7 @@
         md="4"
         lg="3"
       >
-        <v-card class="pa-3" elevation="0">
+        <v-card class="pa-3" elevation="0" border>
           <v-img :src="product.image" height="250" cover />
 
           <v-card-text>

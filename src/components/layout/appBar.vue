@@ -30,7 +30,7 @@
 
       <v-btn variant="text">Login</v-btn>
       <v-btn variant="text"><v-icon icon="mdi-heart-outline" /></v-btn>
-      <v-btn variant="text"><v-icon icon="mdi-shopping-outline" /></v-btn>
+      <v-btn to="/cart" variant="text"><v-icon icon="mdi-shopping-outline" /></v-btn>
     </template>
   </v-app-bar>
 
