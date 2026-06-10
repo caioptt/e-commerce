@@ -18,17 +18,13 @@
                 {{ item.name }}
               </h3>
 
-              <p class="text-body-2 text-grey mb-2">
-                {{ item.description }}
-              </p>
-
               <p class="font-weight-bold">
                 {{ item.price }}
               </p>
             </v-col>
 
             <v-col cols="12" sm="4" class="d-flex align-center justify-sm-end">
-              <v-btn icon variant="outlined" size="small" @click="decreaseQuantity(item.id)">
+              <v-btn variant="text" size="medium" @click="decreaseQuantity(item.id)">
                 <v-icon>mdi-minus</v-icon>
               </v-btn>
 
@@ -36,7 +32,7 @@
                 {{ item.quantity }}
               </span>
 
-              <v-btn icon variant="outlined" size="small" @click="increaseQuantity(item.id)">
+              <v-btn variant="text" size="medium" @click="increaseQuantity(item.id)">
                 <v-icon>mdi-plus</v-icon>
               </v-btn>
 
@@ -95,7 +91,6 @@ const cartItems = ref([
   {
     id: 1,
     name: 'Nike Air Force 1',
-    description: 'Tênis casual confortável para o dia a dia',
     price: 'R$ 699,90',
     priceValue: 699.9,
     quantity: 1,
@@ -104,7 +99,6 @@ const cartItems = ref([
   {
     id: 2,
     name: 'Nike Dunk Low',
-    description: 'Estilo urbano com design clássico',
     price: 'R$ 649,90',
     priceValue: 649.9,
     quantity: 1,

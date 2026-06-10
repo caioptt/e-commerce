@@ -17,6 +17,7 @@ declare module 'vue' {
     Favorite: typeof import('./components/menus/favorite.vue')['default']
     Footer: typeof import('./components/layout/footer.vue')['default']
     Login: typeof import('./components/menus/login.vue')['default']
+    PaymentPage: typeof import('./components/menus/paymentPage.vue')['default']
     ProductCard: typeof import('./components/products/ProductCard.vue')['default']
     ProductFilter: typeof import('./components/products/ProductFilter.vue')['default']
     ProductPage: typeof import('./components/products/productPage.vue')['default']

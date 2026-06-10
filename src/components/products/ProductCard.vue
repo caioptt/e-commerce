@@ -12,21 +12,43 @@
         md="4"
         lg="3"
       >
-        <v-card class="pa-3" elevation="0" border>
-          <v-img :src="product.image" height="250" cover />
+      <v-card class="pa-3" elevation="0" border>
+  <v-img :src="product.image" height="250" cover class="rounded">
+    <v-btn
+      icon
+      size="small"
+      variant="flat"
+      class="favorite-btn"
+    >
+      <v-icon>mdi-heart-outline</v-icon>
+    </v-btn>
+  </v-img>
 
-          <v-card-text>
-            <div class="text-subtitle-1 font-weight-bold">
-              {{ product.name }}
-            </div>
-            <div class="text-body-2 text-grey">
-              {{ product.description }}
-            </div>
-            <div class="text-h6 font-weight-bold mt-2">
-              {{ product.price }}
-            </div>
-          </v-card-text>
-        </v-card>
+  <v-card-text class="px-0">
+    <div class="text-subtitle-1 font-weight-bold">
+      {{ product.name }}
+    </div>
+
+    <div class="text-body-2 text-grey">
+      {{ product.description }}
+    </div>
+
+    <div class="text-h6 font-weight-bold mt-2">
+      {{ product.price }}
+    </div>
+  </v-card-text>
+
+  <v-card-actions class="px-0 pt-0">
+    <v-btn
+      color="black"
+      variant="flat"
+      prepend-icon="mdi-cart-plus"
+      block
+    >
+      Adicionar ao carrinho
+    </v-btn>
+  </v-card-actions>
+</v-card>
       </v-col>
     </v-row>
   </v-container>
@@ -91,6 +113,7 @@ onMounted(() => {
 });
 </script>
 <style scoped>
+
 .square-btn {
   border-radius: 4px;
 }
