@@ -1,10 +1,5 @@
 <template>
-  <v-carousel
-    :show-arrows="false"
-    :height="carouselHeight"
-    cycle
-    hide-delimiter-background
-  >
+  <v-carousel :show-arrows="false" :height="carouselHeight" cycle hide-delimiter-background>
     <v-carousel-item v-for="(item, i) in items" :key="i">
       <v-img :src="item.src" :cover="true" :height="carouselHeight" />
 
@@ -43,6 +38,11 @@ const items = [
   },
   {
     src: new URL("@/assets/carousel/3.png", import.meta.url).href,
+    title: "Explore outras opções",
+    subtitle: "Novidades e lançamentos",
+  },
+  {
+    src: new URL("@/assets/carousel/4.png", import.meta.url).href,
     title: "Explore outras opções",
     subtitle: "Novidades e lançamentos",
   },

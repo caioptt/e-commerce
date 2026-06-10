@@ -25,7 +25,7 @@
             </div>
           </v-card-text>
 
-          <v-card-actions class="px-0 pt-0">
+          <v-card-actions class=" pt-0 pb-0">
             <v-btn color="black" variant="flat" prepend-icon="mdi-cart-plus" block>
               Adicionar ao carrinho
             </v-btn>
