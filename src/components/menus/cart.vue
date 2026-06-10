@@ -1,27 +1,16 @@
 <template>
   <v-container class="py-8">
-    <h1 class="text-h4 font-weight-bold mb-6">
+    <h1 block class="text-h4 font-weight-bold mb-6">
       Carrinho
     </h1>
 
     <v-row>
       <!-- Lista de produtos -->
       <v-col cols="12" md="8">
-        <v-card
-          v-for="item in cartItems"
-          :key="item.id"
-          class="mb-4 pa-4"
-          elevation="0"
-          border
-        >
+        <v-card v-for="item in cartItems" :key="item.id" class="mb-4 pa-4" elevation="0" border>
           <v-row align="center">
             <v-col cols="4" sm="3">
-              <v-img
-                :src="item.image"
-                aspect-ratio="1"
-                cover
-                class="rounded"
-              />
+              <v-img :src="item.image" aspect-ratio="1" cover class="rounded" />
             </v-col>
 
             <v-col cols="8" sm="5">
@@ -39,12 +28,7 @@
             </v-col>
 
             <v-col cols="12" sm="4" class="d-flex align-center justify-sm-end">
-              <v-btn
-                icon
-                variant="outlined"
-                size="small"
-                @click="decreaseQuantity(item.id)"
-              >
+              <v-btn icon variant="outlined" size="small" @click="decreaseQuantity(item.id)">
                 <v-icon>mdi-minus</v-icon>
               </v-btn>
 
@@ -52,22 +36,11 @@
                 {{ item.quantity }}
               </span>
 
-              <v-btn
-                icon
-                variant="outlined"
-                size="small"
-                @click="increaseQuantity(item.id)"
-              >
+              <v-btn icon variant="outlined" size="small" @click="increaseQuantity(item.id)">
                 <v-icon>mdi-plus</v-icon>
               </v-btn>
 
-              <v-btn
-                icon
-                variant="text"
-                color="red"
-                class="ml-3"
-                @click="removeItem(item.id)"
-              >
+              <v-btn icon variant="text" color="red" class="ml-3" @click="removeItem(item.id)">
                 <v-icon>mdi-delete</v-icon>
               </v-btn>
             </v-col>
@@ -99,21 +72,11 @@
             <span>{{ subtotal }}</span>
           </div>
 
-          <v-btn
-            block
-            color="black"
-            class="mt-6"
-            size="large"
-          >
+          <v-btn block color="black" class="mt-6" size="large">
             Finalizar compra
           </v-btn>
 
-          <v-btn
-            block
-            variant="outlined"
-            class="mt-3"
-            to="/"
-          >
+          <v-btn block variant="outlined" class="mt-3" size="large" to="/">
             Continuar comprando
           </v-btn>
         </v-card>
