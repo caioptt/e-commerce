@@ -48,7 +48,7 @@
                             Ainda não tem conta?
                         </span>
 
-                        <v-btn variant="text" class="text-none ">
+                        <v-btn variant="text" to="register" class="text-none ">
                             Criar conta
                         </v-btn>
                     </div>
@@ -81,7 +81,7 @@ function handleLogin() {
 
 <style scoped>
 .login-page {
-    min-height: calc(100vh - 64px);
+    min-height: calc(70vh - 64px);
     background: #f7f7f7;
 }
 
