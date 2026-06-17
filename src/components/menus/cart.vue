@@ -5,7 +5,6 @@
     </h1>
 
     <v-row>
-      <!-- Lista de produtos -->
       <v-col cols="12" md="8">
         <v-card v-for="item in cartItems" :key="item.id" class="mb-4 pa-4" elevation="0" border>
           <v-row align="center">
@@ -44,7 +43,6 @@
         </v-card>
       </v-col>
 
-      <!-- Resumo -->
       <v-col cols="12" md="4">
         <v-card class="pa-5" elevation="0" border>
           <h2 class="text-h6 font-weight-bold mb-4">

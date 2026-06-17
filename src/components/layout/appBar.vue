@@ -17,7 +17,7 @@
       <v-text-field v-model="search" variant="underlined" label="O que você procura?" density="compact" hide-details />
       <v-spacer />
 
-      <v-btn variant="text">Login</v-btn>
+      <v-btn to="/login" variant="text">Login</v-btn>
       <v-btn variant="text"><v-icon icon="mdi-heart-outline" /></v-btn>
       <v-btn to="/cart" variant="text"><v-icon icon="mdi-shopping-outline" /></v-btn>
     </template>
