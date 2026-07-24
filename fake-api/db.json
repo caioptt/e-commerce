@@ -1,0 +1,103 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Nike Air Force 1",
+      "brand": "Nike",
+      "category": "Casual",
+      "description": "Tênis casual confortável, ícone atemporal do streetwear.",
+      "price": 699.90,
+      "stock": 12,
+      "sizes": [38, 39, 40, 41, 42, 43],
+      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=Nike+Air+Force+1"
+    },
+    {
+      "id": 2,
+      "name": "Nike Dunk Low",
+      "brand": "Nike",
+      "category": "Urbano",
+      "description": "Estilo urbano com visual retrô inspirado no basquete dos anos 80.",
+      "price": 649.90,
+      "stock": 8,
+      "sizes": [37, 38, 39, 40, 41, 42],
+      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=Nike+Dunk+Low"
+    },
+    {
+      "id": 3,
+      "name": "Nike Air Max",
+      "brand": "Nike",
+      "category": "Performance",
+      "description": "Amortecimento premium para conforto o dia inteiro.",
+      "price": 799.90,
+      "stock": 5,
+      "sizes": [39, 40, 41, 42, 43, 44],
+      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=Nike+Air+Max"
+    },
+    {
+      "id": 4,
+      "name": "Adidas Superstar II",
+      "brand": "Adidas",
+      "category": "Casual",
+      "description": "Casual clássico com a icônica ponteira em shell toe.",
+      "price": 332.90,
+      "stock": 20,
+      "sizes": [36, 37, 38, 39, 40, 41],
+      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=Adidas+Superstar+II"
+    },
+    {
+      "id": 5,
+      "name": "Puma RS-X",
+      "brand": "Puma",
+      "category": "Urbano",
+      "description": "Design moderno e ousado, com muito volume e cor.",
+      "price": 559.90,
+      "stock": 10,
+      "sizes": [38, 39, 40, 41, 42],
+      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=Puma+RS-X"
+    },
+    {
+      "id": 6,
+      "name": "New Balance 574",
+      "brand": "New Balance",
+      "category": "Casual",
+      "description": "Conforto diário com visual clássico e versátil.",
+      "price": 599.99,
+      "stock": 15,
+      "sizes": [37, 38, 39, 40, 41, 42, 43],
+      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=New+Balance+574"
+    },
+    {
+      "id": 7,
+      "name": "Adidas Samba OG",
+      "brand": "Adidas",
+      "category": "Urbano",
+      "description": "Clássico de campo que virou febre no streetwear.",
+      "price": 449.90,
+      "stock": 18,
+      "sizes": [36, 37, 38, 39, 40, 41, 42],
+      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=Adidas+Samba+OG"
+    },
+    {
+      "id": 8,
+      "name": "New Balance 550",
+      "brand": "New Balance",
+      "category": "Casual",
+      "description": "Inspirado no basquete retrô, combina com tudo.",
+      "price": 629.90,
+      "stock": 9,
+      "sizes": [38, 39, 40, 41, 42, 43],
+      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=New+Balance+550"
+    }
+  ],
+  "brands": ["Nike", "Adidas", "Puma", "New Balance"],
+  "categories": ["Casual", "Urbano", "Performance"],
+  "cart": [],
+  "users": [
+    {
+      "id": 1,
+      "name": "Caio Pereira",
+      "email": "caiopereira552@gmail.com",
+      "password": "123456"
+    }
+  ]
+}

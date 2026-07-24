@@ -1,12 +1,12 @@
 <template>
   <v-container class="py-8">
-    <h1 block class="text-h4 font-weight-bold mb-6">
+    <h1 class="text-h4 font-weight-bold mb-6">
       Carrinho
     </h1>
 
-    <v-row>
+    <v-row v-if="cartStore.items.length">
       <v-col cols="12" md="8">
-        <v-card v-for="item in cartItems" :key="item.id" class="mb-4 pa-4" elevation="0" border>
+        <v-card v-for="item in cartStore.items" :key="item.id" class="mb-4 pa-4" elevation="0" border>
           <v-row align="center">
             <v-col cols="4" sm="3">
               <v-img :src="item.image" aspect-ratio="1" cover class="rounded" />
@@ -18,12 +18,12 @@
               </h3>
 
               <p class="font-weight-bold">
-                {{ item.price }}
+                {{ formatPrice(item.price) }}
               </p>
             </v-col>
 
             <v-col cols="12" sm="4" class="d-flex align-center justify-sm-end">
-              <v-btn variant="text" size="medium" @click="decreaseQuantity(item.id)">
+              <v-btn variant="text" size="medium" @click="cartStore.decreaseQuantity(item.id)">
                 <v-icon>mdi-minus</v-icon>
               </v-btn>
 
@@ -31,11 +31,11 @@
                 {{ item.quantity }}
               </span>
 
-              <v-btn variant="text" size="medium" @click="increaseQuantity(item.id)">
+              <v-btn variant="text" size="medium" @click="cartStore.increaseQuantity(item.id)">
                 <v-icon>mdi-plus</v-icon>
               </v-btn>
 
-              <v-btn icon variant="text" color="red" class="ml-3" @click="removeItem(item.id)">
+              <v-btn icon variant="text" color="red" class="ml-3" @click="cartStore.removeItem(item.id)">
                 <v-icon>mdi-delete</v-icon>
               </v-btn>
             </v-col>
@@ -51,7 +51,7 @@
 
           <div class="d-flex justify-space-between mb-2">
             <span>Subtotal</span>
-            <strong>{{ subtotal }}</strong>
+            <strong>{{ cartStore.subtotalFormatted }}</strong>
           </div>
 
           <div class="d-flex justify-space-between mb-2">
@@ -63,7 +63,7 @@
 
           <div class="d-flex justify-space-between text-h6 font-weight-bold">
             <span>Total</span>
-            <span>{{ subtotal }}</span>
+            <span>{{ cartStore.subtotalFormatted }}</span>
           </div>
 
           <v-btn block color="black" class="mt-6" size="large">
@@ -76,62 +76,26 @@
         </v-card>
       </v-col>
     </v-row>
+
+    <v-row v-else>
+      <v-col cols="12" class="text-center py-12">
+        <v-icon size="64" color="grey">mdi-cart-outline</v-icon>
+        <p class="text-h6 mt-4">Seu carrinho está vazio</p>
+        <v-btn color="black" class="mt-4" to="/">Continuar comprando</v-btn>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { useCartStore } from '@/store/cart'
 
-import tenis1 from '@/assets/products/air force.png'
-import tenis2 from '@/assets/products/dunk low.png'
+const cartStore = useCartStore()
 
-const cartItems = ref([
-  {
-    id: 1,
-    name: 'Nike Air Force 1',
-    price: 'R$ 699,90',
-    priceValue: 699.9,
-    quantity: 1,
-    image: tenis1,
-  },
-  {
-    id: 2,
-    name: 'Nike Dunk Low',
-    price: 'R$ 649,90',
-    priceValue: 649.9,
-    quantity: 1,
-    image: tenis2,
-  },
-])
-
-const subtotal = computed(() => {
-  const total = cartItems.value.reduce((sum, item) => {
-    return sum + item.priceValue * item.quantity
-  }, 0)
-
-  return total.toLocaleString('pt-BR', {
+function formatPrice(value: number) {
+  return value.toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL',
   })
-})
-
-function increaseQuantity(id: number) {
-  const item = cartItems.value.find(item => item.id === id)
-
-  if (item) {
-    item.quantity++
-  }
-}
-
-function decreaseQuantity(id: number) {
-  const item = cartItems.value.find(item => item.id === id)
-
-  if (item && item.quantity > 1) {
-    item.quantity--
-  }
-}
-
-function removeItem(id: number) {
-  cartItems.value = cartItems.value.filter(item => item.id !== id)
 }
 </script>

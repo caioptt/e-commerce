@@ -1,0 +1,11 @@
+{
+  "name": "undefined-clothes-fake-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "api": "json-server --watch db.json --port 3001 --delay 400"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.4"
+  }
+}
