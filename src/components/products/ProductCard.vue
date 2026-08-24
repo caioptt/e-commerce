@@ -12,20 +12,20 @@
       </v-col>
 
       <v-col v-else v-for="product in productsStore.filteredProducts" :key="product.id" cols="12" sm="6" md="4" lg="3">
-        <v-card class="pa-3" elevation="0" border>
+        <v-card max-height="480px" class="pa-3" elevation="0" border>
           <router-link :to="`/produto/${product.id}`" class="text-decoration-none">
-            <v-img :src="product.image" height="250" cover class="rounded">
-              <v-btn icon size="small" variant="outlined" class="favorite-btn" @click.stop.prevent>
+            <v-img :src="product.image" height="250" cover class="rounded pl-2 pt-2">
+              <v-btn icon size="small" variant="outlined" color="black" class="favorite-btn" @click.stop.prevent>
                 <v-icon>mdi-heart-outline</v-icon>
               </v-btn>
             </v-img>
 
-            <v-card-text class="px-0">
+            <v-card-text>
               <div class="text-subtitle-1 font-weight-bold text-black">
                 {{ product.name }}
               </div>
 
-              <div class="text-body-2 text-grey">
+              <div class="text-body-2 text-grey" max-width="200px">
                 {{ product.description }}
               </div>
 

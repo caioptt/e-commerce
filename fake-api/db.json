@@ -8,30 +8,51 @@
       "description": "Tênis casual confortável, ícone atemporal do streetwear.",
       "price": 699.90,
       "stock": 12,
-      "sizes": [38, 39, 40, 41, 42, 43],
-      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=Nike+Air+Force+1"
+      "sizes": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "image": "/img/tenis/nike-air-force-1.jpg"
     },
     {
       "id": 2,
       "name": "Nike Dunk Low",
       "brand": "Nike",
       "category": "Urbano",
-      "description": "Estilo urbano com visual retrô inspirado no basquete dos anos 80.",
+      "description": "Estilo urbano com visual retrô inspirado no basquete.",
       "price": 649.90,
       "stock": 8,
-      "sizes": [37, 38, 39, 40, 41, 42],
-      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=Nike+Dunk+Low"
+      "sizes": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "image": "/img/tenis/nike-dunk-low.jpg"
     },
     {
       "id": 3,
-      "name": "Nike Air Max",
+      "name": "Nike Air Max Excee",
       "brand": "Nike",
       "category": "Performance",
       "description": "Amortecimento premium para conforto o dia inteiro.",
       "price": 799.90,
       "stock": 5,
-      "sizes": [39, 40, 41, 42, 43, 44],
-      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=Nike+Air+Max"
+      "sizes": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "image": "/img/tenis/nike-air-max.jpg"
     },
     {
       "id": 4,
@@ -41,8 +62,15 @@
       "description": "Casual clássico com a icônica ponteira em shell toe.",
       "price": 332.90,
       "stock": 20,
-      "sizes": [36, 37, 38, 39, 40, 41],
-      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=Adidas+Superstar+II"
+      "sizes": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "image": "/img/tenis/adidas-superstar-ii.jpg"
     },
     {
       "id": 5,
@@ -52,8 +80,14 @@
       "description": "Design moderno e ousado, com muito volume e cor.",
       "price": 559.90,
       "stock": 10,
-      "sizes": [38, 39, 40, 41, 42],
-      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=Puma+RS-X"
+      "sizes": [
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "image": "/img/tenis/puma-rs-x.jpg"
     },
     {
       "id": 6,
@@ -63,8 +97,16 @@
       "description": "Conforto diário com visual clássico e versátil.",
       "price": 599.99,
       "stock": 15,
-      "sizes": [37, 38, 39, 40, 41, 42, 43],
-      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=New+Balance+574"
+      "sizes": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "image": "/img/tenis/new-balance-574.jpg"
     },
     {
       "id": 7,
@@ -74,8 +116,16 @@
       "description": "Clássico de campo que virou febre no streetwear.",
       "price": 449.90,
       "stock": 18,
-      "sizes": [36, 37, 38, 39, 40, 41, 42],
-      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=Adidas+Samba+OG"
+      "sizes": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "image": "/img/tenis/adidas-samba-og.jpg"
     },
     {
       "id": 8,
@@ -85,12 +135,28 @@
       "description": "Inspirado no basquete retrô, combina com tudo.",
       "price": 629.90,
       "stock": 9,
-      "sizes": [38, 39, 40, 41, 42, 43],
-      "image": "https://placehold.co/500x500/0b1120/38bdf8?text=New+Balance+550"
+      "sizes": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "image": "/img/tenis/new-balance-550.jpg"
     }
   ],
-  "brands": ["Nike", "Adidas", "Puma", "New Balance"],
-  "categories": ["Casual", "Urbano", "Performance"],
+  "brands": [
+    "Nike",
+    "Adidas",
+    "Puma",
+    "New Balance"
+  ],
+  "categories": [
+    "Casual",
+    "Urbano",
+    "Performance"
+  ],
   "cart": [],
   "users": [
     {

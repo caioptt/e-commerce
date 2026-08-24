@@ -11,6 +11,7 @@ export interface Product {
     price: number
     stock: number
     sizes: number[]
+    colors: string[]
     image: string
 }
 
